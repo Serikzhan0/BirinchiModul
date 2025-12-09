@@ -1,0 +1,15 @@
+/Users/begzhanmaxamatxanov/Desktop/Maxamatxanov Serikjan/C#/BirinchiModul/1_modul/lesson_2/bin/Debug/net8.0/lesson_2
+/Users/begzhanmaxamatxanov/Desktop/Maxamatxanov Serikjan/C#/BirinchiModul/1_modul/lesson_2/bin/Debug/net8.0/lesson_2.deps.json
+/Users/begzhanmaxamatxanov/Desktop/Maxamatxanov Serikjan/C#/BirinchiModul/1_modul/lesson_2/bin/Debug/net8.0/lesson_2.runtimeconfig.json
+/Users/begzhanmaxamatxanov/Desktop/Maxamatxanov Serikjan/C#/BirinchiModul/1_modul/lesson_2/bin/Debug/net8.0/lesson_2.dll
+/Users/begzhanmaxamatxanov/Desktop/Maxamatxanov Serikjan/C#/BirinchiModul/1_modul/lesson_2/bin/Debug/net8.0/lesson_2.pdb
+/Users/begzhanmaxamatxanov/Desktop/Maxamatxanov Serikjan/C#/BirinchiModul/1_modul/lesson_2/obj/Debug/net8.0/lesson_2.GeneratedMSBuildEditorConfig.editorconfig
+/Users/begzhanmaxamatxanov/Desktop/Maxamatxanov Serikjan/C#/BirinchiModul/1_modul/lesson_2/obj/Debug/net8.0/lesson_2.AssemblyInfoInputs.cache
+/Users/begzhanmaxamatxanov/Desktop/Maxamatxanov Serikjan/C#/BirinchiModul/1_modul/lesson_2/obj/Debug/net8.0/lesson_2.AssemblyInfo.cs
+/Users/begzhanmaxamatxanov/Desktop/Maxamatxanov Serikjan/C#/BirinchiModul/1_modul/lesson_2/obj/Debug/net8.0/lesson_2.csproj.CoreCompileInputs.cache
+/Users/begzhanmaxamatxanov/Desktop/Maxamatxanov Serikjan/C#/BirinchiModul/1_modul/lesson_2/obj/Debug/net8.0/lesson_2.sourcelink.json
+/Users/begzhanmaxamatxanov/Desktop/Maxamatxanov Serikjan/C#/BirinchiModul/1_modul/lesson_2/obj/Debug/net8.0/lesson_2.dll
+/Users/begzhanmaxamatxanov/Desktop/Maxamatxanov Serikjan/C#/BirinchiModul/1_modul/lesson_2/obj/Debug/net8.0/refint/lesson_2.dll
+/Users/begzhanmaxamatxanov/Desktop/Maxamatxanov Serikjan/C#/BirinchiModul/1_modul/lesson_2/obj/Debug/net8.0/lesson_2.pdb
+/Users/begzhanmaxamatxanov/Desktop/Maxamatxanov Serikjan/C#/BirinchiModul/1_modul/lesson_2/obj/Debug/net8.0/lesson_2.genruntimeconfig.cache
+/Users/begzhanmaxamatxanov/Desktop/Maxamatxanov Serikjan/C#/BirinchiModul/1_modul/lesson_2/obj/Debug/net8.0/ref/lesson_2.dll

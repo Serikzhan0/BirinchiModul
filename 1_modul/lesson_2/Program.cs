@@ -1,285 +1,221 @@
-﻿namespace _3dars;
+﻿using System;
 
-internal class Program
+class Program
 {
     static void Main(string[] args)
     {
-
-        Console.Write("1 chis son : ");
-        var num1 = int.Parse(Console.ReadLine());
-
-        Console.Write("2 chis son : ");
-        var num2 = int.Parse(Console.ReadLine());
-
-        var num1Counter = 0;
-        var num2Counter = 0;
-
-        for (var i = 1; i <= num1; i++)
-        {
-            if (num1 % i == 0)
-            {
-                num1Counter++;
-            }
-        }
-
-        for (var i = 1; i <= num2; i++)
-        {
-            if (num2 % i == 0)
-            {
-                num2Counter++;
-            }
-        }
-
-        if (num1Counter == 2 && num2Counter == 2)
-        {
-            Console.WriteLine(num1 + num2);
-        }
-        else
-        {
-            Console.WriteLine(num1 * num2);
-        }
-
-        Main(args);
-
-
-
-
-
-        // tub sonlar
-
-        //Console.Write("Son kiriting : ");
-        //var num = int.Parse(Console.ReadLine()); // 24
-        //var counter = 0;
-
-        //for(var i = 1; i <= num; i++)
-        //{
-        //    if(num % i == 0)
-        //    {
-        //        counter++;
-        //    }
-        //}
-
-        //Console.Write($"{counter}  ");
-
-        //if(counter == 2)
-        //{
-        //    Console.WriteLine("Tub");
-        //}
-        //else
-        //{
-        //    Console.WriteLine("Tub emas");
-        //}
-
-        //Main(args);
-
-
-
-        // 24 => 
-
-
-
-
-        // debugging
-
-        //Console.Write("3 xonali son kiriting : ");
-        //int num = int.Parse(Console.ReadLine());   
-        //// 452
-        //int r1 = num / 1 % 10;
-        //int r2 = num / 10 % 10;
-        //int r3 = num / 1000 % 10;
-
-        //int res = r1+ r2 + r3;
-
-        //Console.WriteLine($"Result : {res}");
-
-
-
-        // compile time vs run time
-
-        // var vs dynamic
-
-        //dynamic num = 10;
-
-        //num = "salom";
-
-        //num = 57;
-
-        //var num = 8;
-
-        //var text = "salom";
-
-        //text = "fcdngh";
-
-        //var check = true;
-
-
-
-
-
-
-
-
-
-
-        // do while
-
-        //do
-        //{
-        //    Console.WriteLine("1");
-        //    Console.WriteLine("2");
-        //}
-        //while (true);
-
-
-
-        // foreach
-
-        //string[] fruits = { "olma", "Banan", "anor", "Behi", "Nok", "Shaftoli" };
-
-        //foreach (string fruit in fruits)
-        //{
-        //    int counter = 0;
-        //    foreach (char ch in fruit)
-        //    {
-        //        if (ch == 'a' || ch == 'u'|| ch == 'i'|| ch == 'o'|| ch == 'e')
-        //        {
-        //            counter++;
-        //        }
-        //    }
-        //    Console.WriteLine($"{fruit} : {counter}");
-        //}
-
-
-
-
-
-
-
-        //Random random = new Random();
-        //int randomNumber = random.Next(1, 100);
-
-        //int counter = 0;
-
-        //while (true) // break
-        //{
-        //    Console.Write("Son kiriting : ");
-        //    int num = int.Parse(Console.ReadLine());
-        //    ++counter;
-        //    if (num == randomNumber)
-        //    {
-        //        Console.WriteLine("Urra Urra");
-        //        break;
-        //    }
-
-        //    if (counter == 6)
-        //    {
-        //        Console.WriteLine("Game over");
-        //        Console.WriteLine($"Siz topolmagan son : {randomNumber}");
-        //        break;
-        //    }
-
-        //    if (num > randomNumber)
-        //    {
-        //        Console.WriteLine("Kichikroq son kiriting");
-        //    }
-
-        //    else if (num < randomNumber)
-        //    {
-        //        Console.WriteLine("Kattaroq son kiriting");
-        //    }
-        //}
-
-
-
-        // WHILE
-
-        //int i = 1;
-
-        //while(i <= 10)
-        //{
-        //    Console.WriteLine(i);
-        //    i++;
-        //}
-
-
-
-
-        /* barcha 3 xonali sonlar ichidan
-         * hamma raqammi toq sonlar
-         * ekranga chiqaring
-         * hamma raqami toq sonlarga misol pastda
-         * 157, 335, 799, 751, 571, 333, 111, 597
-         */
-
-
-
-
-
-
-        //for(int i = 100; i <= 999; i++)
-        //{
-        //    int r1 = i / 1 % 10;
-        //    int r2 = i / 10 % 10;
-        //    int r3 = i / 100 % 10;
-
-        //    if (r1 % 2 != 0 && r2 % 2 != 0 && r3 % 2 != 0)
-        //    {
-        //        Console.Write($"{i}, ");
-        //    }
-        //}
-
-
-        // Loops (for, while, do while, foreach)
-
-        //Console.Write("1 chi sonni kiriting : ");
-        //int num1 = int.Parse(Console.ReadLine());
-
-        //Console.Write("2 chi sonni kiriting : ");
-        //int num2 = int.Parse(Console.ReadLine());
-        //// 16 5
-        //for(int i = num1; i <= num2; i++)
-        //{
-        //    if (i % 3 == 0)
-        //    {
-        //        Console.Write($"{i}, ");
-        //    }
-        //}
-        //Console.WriteLine();
-        //for (int i = num1; i >= num2; i--)
-        //{
-        //    if (i % 3 == 0)
-        //    {
-        //        Console.Write($"{i}, ");
-        //    }
-        //}
-
-
-
-
-        //for(int i = 100; i <= 200; i++)
-        //{
-        //    if(i % 2 == 0)
-        //    {
-        //        Console.Write($"{i}, ");
-        //    }
-        //}
-
-
-
-
-
-
-        //int num = 55;
-
-        //if(10 <= num && num <= 99)
-        //{
-        //    Console.WriteLine("Ikki xonali");
-        //}
-
-        /* Funksiya ichidagi o'zgaruvchilar kichik harda bo'lsin CamelCase (intValue)
-         * {} alohida qatorda bo'lsin
-         *
-         *
-         */
+        Console.WriteLine("Проект работает ✅");
     }
 }
+
+
+// HOMEWORK
+
+// // 1
+        // for (int i = 5; i >= 1; i--)
+        // {
+        //     for (int j = 1; j <= i; j++)
+        //         Console.Write(j);
+        //     Console.WriteLine();
+        // }
+        //
+        //
+        // // 2
+        // for (int i = 1; i <= 5; i++)
+        // {
+        //     for (int j = 1; j <= i; j++)
+        //         Console.Write(j);
+        //     Console.WriteLine();
+        // }
+        //
+        //
+        // // 3
+        // for (int i = 1; i <= 1; i++)
+        // {
+        //     for (int j = 1; j <= 5; j++)
+        //         Console.Write(j);
+        //     Console.WriteLine();
+        // }
+        //
+        // for (int s = 0; s < 1; s++) Console.Write(" ");
+        // for (int j = 2; j <= 4; j++) Console.Write(j);
+        // Console.WriteLine();
+        //
+        // for (int s = 0; s < 2; s++) Console.Write(" ");
+        // Console.WriteLine(3);
+        //
+        //
+        // // 4
+        // for (int s = 0; s < 4; s++) Console.Write(" ");
+        // Console.WriteLine(1);
+        //
+        // for (int s = 0; s < 3; s++) Console.Write(" ");
+        // Console.WriteLine("212");
+        //
+        // for (int s = 0; s < 2; s++) Console.Write(" ");
+        // Console.WriteLine("32123");
+        //
+        // for (int s = 0; s < 1; s++) Console.Write(" ");
+        // Console.WriteLine("4321234");
+        //
+        // Console.WriteLine("543212345");
+        //
+        //
+        // // 5
+        // for (int s = 0; s < 2; s++) Console.Write(" ");
+        // Console.WriteLine(3);
+        //
+        // for (int s = 0; s < 1; s++) Console.Write(" ");
+        // Console.WriteLine("232");
+        //
+        // Console.WriteLine("12321");
+        //
+        // for (int s = 0; s < 1; s++) Console.Write(" ");
+        // Console.WriteLine("232");
+        //
+        // for (int s = 0; s < 2; s++) Console.Write(" ");
+        // Console.WriteLine(3);
+        //
+        //
+        // // 6
+        // Console.WriteLine("1234321");
+        //
+        // for (int s = 0; s < 1; s++) Console.Write(" ");
+        // Console.WriteLine("23432");
+        //
+        // for (int s = 0; s < 2; s++) Console.Write(" ");
+        // Console.WriteLine("343");
+        //
+        // for (int s = 0; s < 3; s++) Console.Write(" ");
+        // Console.WriteLine("4");
+        //
+        // for (int s = 0; s < 3; s++) Console.Write(" ");
+        // Console.WriteLine("5");
+        //
+        // for (int s = 0; s < 2; s++) Console.Write(" ");
+        // Console.WriteLine("656");
+        //
+        // for (int s = 0; s < 1; s++) Console.Write(" ");
+        // Console.WriteLine("76567");
+        //
+        // Console.WriteLine("8765678");
+        //
+        //
+        // // 7
+        // int h = 5, w = 6;
+        //
+        // for (int i = 0; i < h; i++)
+        // {
+        //     for (int j = 0; j < w; j++)
+        //     {
+        //         if (i == 0 || i == h - 1 || j == 0 || j == w - 1)
+        //             Console.Write("1");
+        //         else
+        //             Console.Write(" ");
+        //     }
+        //
+        //     Console.WriteLine();
+        // }
+        //
+        //
+        // // 8
+        // int size = 8;
+        //
+        // for (int i = 0; i < size; i++)
+        // {
+        //     for (int j = 0; j < size; j++)
+        //     {
+        //
+        //         if (i == 0 || i == size - 1 || j == 0 || j == size - 1)
+        //             Console.Write("0");
+        //
+        //         else if (j == i)
+        //             Console.Write("0");
+        //         else
+        //             Console.Write(" ");
+        //     }
+        //
+        //     Console.WriteLine();
+        // }
+        //
+        // Console.WriteLine("OSON");
+        //
+        //
+        // // 1
+        // {
+        //     int inputNumber = int.Parse(Console.ReadLine());
+        //     int resultNumber = inputNumber + 10;
+        //     Console.WriteLine(resultNumber);
+        // }
+        //
+        //
+        // // 2
+        // {
+        //     int inputNumber = int.Parse(Console.ReadLine());
+        //     int resultNumber = inputNumber - 10;
+        //     Console.WriteLine(resultNumber);
+        // }
+        //
+        //
+        // // 3
+        // {
+        //     int firstNumber = int.Parse(Console.ReadLine());
+        //     int secondNumber = int.Parse(Console.ReadLine());
+        //
+        //     int sum = firstNumber + secondNumber;
+        //     Console.WriteLine(sum);
+        // }
+        //
+        //
+        // // 4
+        // {
+        //     int firstNumber = int.Parse(Console.ReadLine());
+        //     int secondNumber = int.Parse(Console.ReadLine());
+        //
+        //     int difference = firstNumber - secondNumber;
+        //     Console.WriteLine(difference);
+        // }
+        //
+        //
+        // // 5
+        // {
+        //     int firstNumber = int.Parse(Console.ReadLine());
+        //     int secondNumber = int.Parse(Console.ReadLine());
+        //
+        //     int product = firstNumber * secondNumber;
+        //     Console.WriteLine(product);
+        // }
+        //
+        //
+        // // 6
+        // {
+        //     int dividend = int.Parse(Console.ReadLine());
+        //     int divisor = int.Parse(Console.ReadLine());
+        //
+        //     int quotient = dividend / divisor;
+        //     Console.WriteLine(quotient);
+        // }
+        //
+        //
+        // // 7
+        // {
+        //     {
+        //         int radius = int.Parse(Console.ReadLine());
+        //
+        //         int circleLength = 2 * 3 * radius;
+        //         Console.WriteLine(circleLength);
+        //     }
+        // }
+        //
+        //
+        // // 8
+        // {
+        //
+        //     int radius = int.Parse(Console.ReadLine());
+        //
+        //     int circleArea = 3 * radius * radius;
+        //     Console.WriteLine(circleArea);
+        //
+        // }
+        //
+        //
