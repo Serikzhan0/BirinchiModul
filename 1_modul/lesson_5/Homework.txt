@@ -1,0 +1,474 @@
+namespace lesson_5
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+           // 1
+            List<int> nums = new List<int>();
+
+            nums.Add(1);
+            nums.Add(234);
+            nums.Add(123);
+            nums.Add(1);
+            nums.Add(123);
+
+            var sum = 0;
+
+            foreach (int son in nums)
+            {
+                if (100 <= son && 999 >= son)
+                {
+                    sum++;
+                }
+
+            }
+            Console.WriteLine(sum);
+
+            // 2
+            List<int> nums = new List<int>();
+
+            nums.Add(1);
+            nums.Add(2);
+            nums.Add(4);
+            nums.Add(6);
+            nums.Add(18);
+            nums.Add(19);
+
+            var sum = 0;
+
+            foreach (int son in nums)
+            {
+
+                if (son % 2 == 0)
+                {
+                    sum++;
+                }
+            }
+            Console.WriteLine(sum);
+
+            // 3
+
+            List<int> nums = new List<int>();
+
+            nums.Add(1);
+            nums.Add(6);
+            nums.Add(4);
+            nums.Add(5);
+            nums.Add(2);
+            nums.Add(3);
+
+            var sum = 0;
+
+            foreach (int i in nums)
+            {
+                if(i % 2 != 0)
+                {
+                    sum = sum + i;
+                }
+            }
+            Console.WriteLine(sum);
+
+            // 4
+
+            List<int> nums = new List<int>();
+
+            nums.Add(21);
+            nums.Add(3);
+            nums.Add(63);
+            nums.Add(2);
+            nums.Add(6);
+
+            var sum = 0;
+
+            foreach(int i in nums)
+            {
+                if(i % 3 == 0 && i % 7 == 0)
+                {
+                    sum++;
+                }
+            }
+
+            Console.WriteLine(sum);
+
+            // 5
+
+            List<int> nums = new List<int>();
+
+            nums.Add(21);
+            nums.Add(5);
+            nums.Add(40);
+            nums.Add(11);
+            nums.Add(2);
+            nums.Add(20);
+
+            var sum = 0;
+            var yigindi = 0;
+
+            foreach(var x in nums)
+            {
+                if(x > 9 && x < 100 && x % 2 != 0)
+                {
+                    sum++;
+                    yigindi = yigindi + x;
+                }
+            }
+
+            Console.WriteLine(sum);
+            Console.WriteLine(yigindi);
+
+            // 6
+
+            List<int> nums = new List<int>() { 1, 2, 3, 4, 5, 6};
+
+            var oneel = nums[0];
+            var lastel = nums.Count ;
+
+            Console.WriteLine(lastel);
+
+            for(var i = 1; i < nums.Count-1;  i++)
+            {
+                Console.WriteLine(nums[i]);
+            }
+            Console.WriteLine(oneel);
+
+            // 7
+
+            List<int> nums = new List<int>() { 1, 2, 3, 4, 5};
+
+            var sum = 0;
+
+            for (int i = 0; i < 3; i++)
+            {
+                sum += nums[i];
+            }
+
+            Console.WriteLine(sum);
+
+            // 8
+            List<int> nums = new List<int>() { 1, 2, 3, 4, 5,};
+
+            var sum = 0;
+
+            for (int i = nums.Count - 3; i < nums.Count; i++)
+            {
+                sum += nums[i];
+            }
+
+            Console.WriteLine(sum);
+
+            // 9
+            List<int> nums = new List<int>() { 1, 2, 3, 4, 5, 6, 7, 8, 9 };
+
+            var toq = 0;
+            var juft = 0;
+
+            foreach(int x in nums)
+            {
+                if(x % 2 == 0)
+                {
+                    juft++; 
+                } else
+                {
+                    toq++;
+                }
+
+            }
+            if (toq > juft)
+            {
+                Console.WriteLine(true);
+            }
+            else
+            {
+                Console.WriteLine(false);
+            }
+
+            // 10
+
+            List<int> nums = new List<int>() { 1, 2, 3, 4, 5 };
+
+            foreach (int x in nums)
+            {
+                if (x % 2 == 0)
+                {
+                    Console.WriteLine(x * 3);
+                }
+                else
+                {
+                    Console.WriteLine(x);
+                }
+
+            }
+
+            // 11
+
+            List<int> nums = new List<int>() { 5, 10, 15, 5, 5 };
+
+            var sum = 0;
+
+            foreach(int x in nums)
+            {
+                if(x % 5 != 0)
+                {
+                    sum++;
+                }
+            }
+
+            if(sum == 0)
+            {
+                Console.WriteLine(true);
+            } else
+            {
+                Console.WriteLine(false); 
+            }
+
+            // 12
+
+            List<int> nums = new List<int>() { 22, 10, 12, 1, 2, 3 };
+
+            var natija = false;
+
+            for (int i = 0; i < 3; i++)
+            {
+                if (nums[i] > 9 && nums[i] < 100)
+                {
+                    natija = true;
+                }
+            }
+            Console.WriteLine(natija);
+
+            // 13
+
+            List<int> nums = new List<int>() { 4, 2, 3, 4, 5, 6, 7, 9 };
+
+            var oxir = nums[nums.Count - 1];
+            var oldin = nums[nums.Count - 2];
+
+            if (nums[0] % 2 == 0 && nums[1] % 2 == 0 && oxir % 2 != 0 && oldin % 2 != 0)
+            {
+                Console.WriteLine(true);
+
+            } else
+            {
+                Console.WriteLine(false);
+            }
+            
+           // 25
+            List<int> nums = new List<int>() { 1, 2, 3, 4, 5, 6,};
+
+            var num1 = 0;
+            var num2 = 0;
+
+            for(int i = 0; i < nums.Count() -1; i++)
+            {
+                if(num1 + num2 < nums[i] + nums[i+1])
+                {
+                    num1 = nums[i];
+                    num2 = nums[i+1];
+                }
+            }
+            Console.WriteLine($"{num1} {num2}");
+
+           // 26 
+
+            List<int> nums = new List<int>() { 1, 2, 3, 4, 5};
+
+            var sum = 0;
+
+            for(int i = 0; i < nums.Count - 1; i++)
+            {
+                if (nums[i] < nums[i+1])
+                {
+                    sum++;
+                }
+            }
+            Console.WriteLine(sum);
+
+            //27 
+            
+            List<int> list1 = new List<int>() { 1, 2, 3, 4, 5 };
+            List<int> list2 = new List<int>() { 2, 2, 3, 4, 5 };
+            
+            List<int> list3 = new List<int>();
+            
+            var natija = 1;
+            
+            for(int i = 0; i < list1.Count; i++)
+            {
+                natija = list1[i] * list2[i];
+            
+                Console.Write($"{natija}, ");
+            }
+
+            //28
+            
+            List<string> texts = new List<string>() { "$salom", "hello", "eat", "$play" };
+            
+            var sum = 0;
+            
+            for(int i = 0; i < texts.Count(); i++)
+            {
+                if (texts[i][0] == '$')
+                {
+                 sum++;
+               }
+            }
+            Console.WriteLine(sum);
+
+
+        //HOMEWORK
+        
+        // DRY : don't repeat yourself
+        
+        // "xboxy" => "yboyz"
+
+        //Console.WriteLine(GetChangedXY("xboxy")); // 1.4.0.2
+
+        // "hello" => "olleh"
+
+        //Console.WriteLine(GetReversed("hello")); // 1.4.0.8
+
+        //Console.WriteLine(IsPolindrome("kiyik")); // 1.4.0.10
+        //Console.WriteLine(IsPolindrome("salom"));
+        //Console.WriteLine(IsPolindrome("aka"));
+
+        //Console.WriteLine(GetCountOfOK("oknok")); // 1.4.0.17
+
+
+        // "salom nma gap g13 qale"
+        // "" bo'sh string
+        // "     " white space
+    }
+
+
+    static string GetTextBetweenFirtsTwoSpaces(string s)
+    {
+        var index1 = s.IndexOf(" ");
+        var index2 = s.IndexOf(" ", index1 + 1);
+
+        if(index1 == index2 || index2 == -1)
+        {
+            return string.Empty;
+        }
+        // "salom nma gap g13 qale"
+        var res = s.Substring(index1 + 1, index2 - index1 - 1);
+        return res;
+    }
+
+    static string RemoveSpaces(string s)
+    {
+        s = s.Replace(" ", "");
+
+        return s;
+    }
+
+    static string GetDiff(string a, string b)
+    {
+        var diff = Math.Abs(a.Length - b.Length);
+
+        if(a.Length > b.Length)
+        {
+            a = a.Remove(0, diff);
+            return a + b;
+        }
+
+        b = b.Remove(0, diff);
+        return a + b;
+    }
+
+    static string GetConCat(string a, string b)
+    {
+        // ok  da => okda
+        // hello  kna => hellokna
+
+        if (a[a.Length - 1] == b[0])
+        {
+            b = b.Remove(0, 1);
+        }
+
+        return a + b;
+    }
+
+    static string GetFirstTwo(string s)
+    {
+        return s.Substring(0, 2);
+        // return s.Remove(3);
+    }
+
+    static int GetCountOfOK(string str)
+    {
+        // "oknok"
+        var counter = 0;
+        for(var i = 0; i < str.Length - 1; i++)
+        {
+            if (str[i] == 'o' && str[i+1] == 'k')
+            {
+                ++counter;
+            }
+        }
+        return counter;
+    }
+
+
+    static bool IsPolindrome(string str)
+    {
+        var res = string.Empty;
+
+        for (var i = str.Length - 1; i >= 0; i--)
+        {
+            res = res + str[i];
+        }
+
+        return str == res;
+    }
+
+    static string GetReversed(string str)
+    {
+        // str = "hello"  res = "olleh"
+        var res = string.Empty;
+
+
+        for (var i = str.Length - 1; i >= 0; i--)
+        {
+            res = res + str[i];
+        }
+
+        //for(var i = 0; i < str.Length; i++)
+        //{
+        //    res = str[i] + res;
+        //}
+
+        return res;
+    }
+
+
+    static string GetChangedXY(string str)
+    {
+        var res = string.Empty;
+        for (var i = 0; i < str.Length; i++)
+        {
+            if (str[i] == 'x')
+            {
+                res += 'y';
+            }
+            else if (str[i] == 'y')
+            {
+                res += 'z';
+            }
+            else
+            {
+                res += str[i];
+            }
+        }
+
+        return res;
+
+
+        //str = str.Replace('y', 'z');
+        //str = str.Replace('x', 'y');
+        //return str;
+
+
+        }
+    }
+}

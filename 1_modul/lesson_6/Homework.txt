@@ -1,0 +1,351 @@
+namespace lesoon_6
+{
+    internal class Program
+    {
+        // 1
+        static float Add(float a, float b)
+        {
+            return a + b;
+        }
+        
+        static float Add(float a, float b, float c)
+        {
+            return a + b + c; 
+        }
+        
+        static string Add(string a, string b)
+        {
+            return a + b; 
+        }
+        
+        // 2
+        static void Repeat(int a, int b)
+        {
+            for(int i = 0; i < b;  i++)
+            {
+                Console.WriteLine(a);
+            }
+        }
+        
+        static void Repeat(int a )
+        {
+            for (int i = 0; i < a; i++)
+            {
+                Console.WriteLine(a);
+            }
+        }
+        
+        // 3
+        static int Calculate(int a, int b)
+        {
+            return a + b;
+        }
+        
+        static int Calculate (int a, int b, int c)
+        {
+            return a * b * c;
+        }
+        
+        
+        // 4
+        static int getAmountDigit(int a)
+        {
+            var help = $"{a}";
+            var sum = 0;
+        
+            for(int i = 0; i < help.Count(); i++)
+            {
+                sum++;
+            }
+            return sum;
+        }
+        
+        static int getAmountDigit(string a)
+        {
+            var sum = 0;
+            for(int i = 0; i < a.Count(); i++)
+            {
+                if (char.IsDigit(a[i]))
+                {
+                    sum++;
+                }
+            }
+        
+            return sum;
+        }
+        
+        
+        
+        // 5
+        
+        static int findMax(int a, int b, int c)
+        {
+           return Math.Max(Math.Max(a, b), c);
+        }
+        
+        static int findMax(int a, int b, int c, int d)
+        {
+            return Math.Max(Math.Max(a, b), Math.Max(c, d));
+        
+        }
+        
+        static int findMax(int a, int b, int c, int d, int f)
+        {
+            return Math.Max(Math.Max(a, b), Math.Max(Math.Max(c, d), f ));
+        
+        }
+        
+        // 6
+        static int Summa(int a, int b)
+        {
+            if(a == b)
+            {
+                return a;
+            }
+            return a + Summa( a + 1, b );
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        static void Main(string[] args)
+        {
+            Console.WriteLine(Add(1f, 3.5f)); // 1
+            Repeat(3); // 2
+            Console.WriteLine(Calculate(1, 2, 3)); // 3
+            Console.WriteLine(getAmountDigit("salo00m")); // 4
+            Console.WriteLine(findMax(1, 2, 3)); // 5
+            Console.WriteLine(Summa(2, 4)); // 6
+        
+            Console.WriteLine(Max(2, 3)); // 10
+            Console.WriteLine(Abs(-4));// 11
+            Console.WriteLine(Isuppper('A')); // 12
+            Console.WriteLine(Isdigit('0')); // 14
+            Console.WriteLine(Islower('s')); // 15
+            Console.WriteLine(Pow(2, 3)); // 16
+        
+        }
+        
+        // 10
+        
+        static int Max(int a, int b)
+        {
+            var big = a;
+        
+            if(big < b)
+            {
+                big = b;
+            }
+            return big;
+        }
+        
+        // 11
+        static int Abs(int a)
+        {
+            if(a < 0)
+            {
+                return a + a * (-2);
+            } 
+            return a;
+        }
+        
+        // 12
+        static bool Isuppper(char belgi)
+        {
+            if (belgi >= 'A' && belgi <= 'Z')
+            {
+                 return true;
+            }
+            return false;
+        }
+        
+        // 14
+        
+        static bool Isdigit(char belgi)
+        {
+            if(belgi >= '0' &&  belgi <='9')
+            {
+                return true;
+            }
+            return false;
+        }
+        
+        // 15
+        
+        static bool Islower(char belgi)
+        {
+            if (belgi >= 'a' && belgi <= 'z')
+            {
+                return true;
+            }
+            return false;
+        }
+        
+        
+        //// Homework
+         static void DisplayList(List<int> nums)
+            {
+                foreach(var num in nums)
+                {
+                    Console.Write($"{num} ");
+                }
+                Console.WriteLine();
+            }
+        
+            static List<int> FillListWithConsoleValues(List<int> nums, int len)
+            {
+                for(var i = 0; i < len; i++)
+                {
+                    Console.Write($"{i} : ");
+                    nums.Add(int.Parse(Console.ReadLine()));
+                }
+        
+                return nums;
+            }
+        
+            static List<int> FillListWithRandomValues(List<int> nums, int len, int min, int max)
+            {
+                Random rand = new Random(); 
+                for (var i = 0; i < len; i++)
+                {
+                    nums.Add(rand.Next(min, max));
+                }
+        
+                return nums;
+            }
+        
+        
+        
+        
+            static void Main(string[] args)
+            {
+        
+        
+                Console.Write("Enter len of list : ");
+                var len = int.Parse(Console.ReadLine());
+                List<int> nums = new List<int>();
+                //nums = FillListWithConsoleValues(nums, len);
+                nums = FillListWithRandomValues(nums, len, 10, 50);
+                DisplayList(nums);
+        
+                var res = GetBiggerThenLeftN(nums);
+                Console.WriteLine(res);
+        
+                //var res = GetTwoElements(nums);
+                //DisplayList(res);
+                //var pN = GetCountOfPossitiveNums(nums); // 1.5.1.17
+                //var nN = GetCountOfNegativeNums(nums);
+                //Console.WriteLine($"Musbatlar : {pN}  Manfiy : {nN}");
+        
+        
+        
+                //nums = GetSwappedFirstAndLast(nums); // 1.5.1.6
+                //var res = CompareOddAndEvenElements(nums); // 1.5.1.9
+                //Console.WriteLine(res);
+                //DisplayList(nums);
+        
+        
+            }
+        
+            static int GetBiggerThenLeftN(List<int> nums)
+            {
+                // 9 1 4 2 8 7 2 6
+                var counter = 0;
+                for(var i = 1; i < nums.Count(); i++)
+                {
+                    if (nums[i] > nums[i-1])
+                    {
+                        ++counter;
+                    }
+                }
+        
+                return counter;
+            }
+        
+            static List<int> GetTwoElements(List<int> nums)
+            {
+                // 9 1 4 2 8 7 2 6
+                var num1 = 0;
+                var num2 = 0;
+                for(var i = 0; i < nums.Count() - 1; i++)
+                {
+                    if(num1 + num2 < nums[i] + nums[i+1])
+                    {
+                        num1 = nums[i];
+                        num2 = nums[i + 1];
+                    }
+                }
+        
+                List<int> resposne = new List<int>() { num1, num2 };
+        
+                return resposne;
+            }
+        
+        
+            static int GetCountOfPossitiveNums(List<int> ints)
+            {
+                var countPossitive = 0;
+                foreach(var num in ints)
+                {
+                    if(num > 0)
+                    {
+                        ++countPossitive;
+                    }
+                }
+        
+                return countPossitive;
+            }
+        
+            static int GetCountOfNegativeNums(List<int> ints)
+            {
+                var countNegative = 0;
+                foreach (var num in ints)
+                {
+                    if (num < 0)
+                    {
+                        ++countNegative;
+                    }
+                }
+        
+                return countNegative;
+            }
+        
+        
+        
+            static bool CompareOddAndEvenElements(List<int> nums)
+            {
+                // 4 8 6 2 6 8 7
+                var countOdd = 0;
+                var countEven = 0;
+        
+                foreach(var num in nums)
+                {
+                    if(num % 2 == 0)
+                    {
+                        ++countEven;
+                    }
+                    else
+                    {
+                        ++countOdd;
+                    }
+                }
+        
+                return countOdd > countEven;
+            }
+        
+        
+            static List<int> GetSwappedFirstAndLast(List<int> nums)
+            {
+                // 4 5 8 7 2
+                var help = nums[0];
+                nums[0] = nums[nums.Count() - 1];
+                nums[nums.Count() - 1] = help;
+        
+                return nums;
+
+    }
+}
