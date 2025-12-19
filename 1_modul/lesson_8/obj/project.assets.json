@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/begzhanmaxamatxanov/Desktop/Maxamatxanov Serikjan/C#/BirinchiModul/1_modul/lesson_8/lesson_8.csproj",
+      "projectUniqueName": "/Users/begzhanmaxamatxanov/Desktop/C#/BirinchiModul/1_modul/lesson_8/lesson_8.csproj",
       "projectName": "lesson_8",
-      "projectPath": "/Users/begzhanmaxamatxanov/Desktop/Maxamatxanov Serikjan/C#/BirinchiModul/1_modul/lesson_8/lesson_8.csproj",
+      "projectPath": "/Users/begzhanmaxamatxanov/Desktop/C#/BirinchiModul/1_modul/lesson_8/lesson_8.csproj",
       "packagesPath": "/Users/begzhanmaxamatxanov/.nuget/packages/",
-      "outputPath": "/Users/begzhanmaxamatxanov/Desktop/Maxamatxanov Serikjan/C#/BirinchiModul/1_modul/lesson_8/obj/",
+      "outputPath": "/Users/begzhanmaxamatxanov/Desktop/C#/BirinchiModul/1_modul/lesson_8/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/begzhanmaxamatxanov/.nuget/NuGet/NuGet.Config"

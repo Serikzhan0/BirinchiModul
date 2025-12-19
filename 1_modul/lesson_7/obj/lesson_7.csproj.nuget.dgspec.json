@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/begzhanmaxamatxanov/Desktop/Maxamatxanov Serikjan/C#/BirinchiModul/1_modul/lesson_7/lesson_7.csproj": {}
+    "/Users/begzhanmaxamatxanov/Desktop/C#/BirinchiModul/1_modul/lesson_7/lesson_7.csproj": {}
   },
   "projects": {
-    "/Users/begzhanmaxamatxanov/Desktop/Maxamatxanov Serikjan/C#/BirinchiModul/1_modul/lesson_7/lesson_7.csproj": {
+    "/Users/begzhanmaxamatxanov/Desktop/C#/BirinchiModul/1_modul/lesson_7/lesson_7.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/begzhanmaxamatxanov/Desktop/Maxamatxanov Serikjan/C#/BirinchiModul/1_modul/lesson_7/lesson_7.csproj",
+        "projectUniqueName": "/Users/begzhanmaxamatxanov/Desktop/C#/BirinchiModul/1_modul/lesson_7/lesson_7.csproj",
         "projectName": "lesson_7",
-        "projectPath": "/Users/begzhanmaxamatxanov/Desktop/Maxamatxanov Serikjan/C#/BirinchiModul/1_modul/lesson_7/lesson_7.csproj",
+        "projectPath": "/Users/begzhanmaxamatxanov/Desktop/C#/BirinchiModul/1_modul/lesson_7/lesson_7.csproj",
         "packagesPath": "/Users/begzhanmaxamatxanov/.nuget/packages/",
-        "outputPath": "/Users/begzhanmaxamatxanov/Desktop/Maxamatxanov Serikjan/C#/BirinchiModul/1_modul/lesson_7/obj/",
+        "outputPath": "/Users/begzhanmaxamatxanov/Desktop/C#/BirinchiModul/1_modul/lesson_7/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/begzhanmaxamatxanov/.nuget/NuGet/NuGet.Config"
