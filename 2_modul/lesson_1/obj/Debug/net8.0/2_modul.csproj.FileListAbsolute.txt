@@ -1,0 +1,15 @@
+/Users/begzhanmaxamatxanov/Desktop/C#/BirinchiModul/2_modul/2_modul/bin/Debug/net8.0/2_modul
+/Users/begzhanmaxamatxanov/Desktop/C#/BirinchiModul/2_modul/2_modul/bin/Debug/net8.0/2_modul.deps.json
+/Users/begzhanmaxamatxanov/Desktop/C#/BirinchiModul/2_modul/2_modul/bin/Debug/net8.0/2_modul.runtimeconfig.json
+/Users/begzhanmaxamatxanov/Desktop/C#/BirinchiModul/2_modul/2_modul/bin/Debug/net8.0/2_modul.dll
+/Users/begzhanmaxamatxanov/Desktop/C#/BirinchiModul/2_modul/2_modul/bin/Debug/net8.0/2_modul.pdb
+/Users/begzhanmaxamatxanov/Desktop/C#/BirinchiModul/2_modul/2_modul/obj/Debug/net8.0/2_modul.GeneratedMSBuildEditorConfig.editorconfig
+/Users/begzhanmaxamatxanov/Desktop/C#/BirinchiModul/2_modul/2_modul/obj/Debug/net8.0/2_modul.AssemblyInfoInputs.cache
+/Users/begzhanmaxamatxanov/Desktop/C#/BirinchiModul/2_modul/2_modul/obj/Debug/net8.0/2_modul.AssemblyInfo.cs
+/Users/begzhanmaxamatxanov/Desktop/C#/BirinchiModul/2_modul/2_modul/obj/Debug/net8.0/2_modul.csproj.CoreCompileInputs.cache
+/Users/begzhanmaxamatxanov/Desktop/C#/BirinchiModul/2_modul/2_modul/obj/Debug/net8.0/2_modul.sourcelink.json
+/Users/begzhanmaxamatxanov/Desktop/C#/BirinchiModul/2_modul/2_modul/obj/Debug/net8.0/2_modul.dll
+/Users/begzhanmaxamatxanov/Desktop/C#/BirinchiModul/2_modul/2_modul/obj/Debug/net8.0/refint/2_modul.dll
+/Users/begzhanmaxamatxanov/Desktop/C#/BirinchiModul/2_modul/2_modul/obj/Debug/net8.0/2_modul.pdb
+/Users/begzhanmaxamatxanov/Desktop/C#/BirinchiModul/2_modul/2_modul/obj/Debug/net8.0/2_modul.genruntimeconfig.cache
+/Users/begzhanmaxamatxanov/Desktop/C#/BirinchiModul/2_modul/2_modul/obj/Debug/net8.0/ref/2_modul.dll
