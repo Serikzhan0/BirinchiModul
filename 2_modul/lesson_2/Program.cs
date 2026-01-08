@@ -106,7 +106,7 @@ internal class Program
 {
     static void Main(string[] args)
     {
-        // ===== CAR =====
+        //  CAR 
         Car car1 = new Car()
         {
             Brand = "BMW",
@@ -135,7 +135,7 @@ internal class Program
         var cars = carService.GetAllCars();
 
 
-        // ===== SCHOOL =====
+        //  SCHOOL
         School school1 = new School()
         {
             Name = "School №1",
